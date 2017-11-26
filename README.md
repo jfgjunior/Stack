@@ -8,6 +8,7 @@ Simple stack data structure written in C++.
 - Begin: Start a new block where the user can undo or merge changes
 - Rollback: Undo the last operation
 - Commit: Merge the blocks
+- ToString: Print the current block
 
 # Execution
 - clang++ *.cpp -o stack

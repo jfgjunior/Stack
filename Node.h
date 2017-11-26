@@ -3,17 +3,18 @@
 
 #include <iostream>
 
-typedef struct Node {
+template <class T>
+struct Node {
     
-    int value;
-    Node *right;
-    Node *left;
+    T value;
+    Node<T> *right;
+    Node<T> *left;
 
-    Node(int value) {
+    Node<T>(T value) {
         this->value = value;
         right = NULL;
         left  = NULL;
     }
-}Node;
+};
 
 #endif

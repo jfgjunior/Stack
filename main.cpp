@@ -7,17 +7,19 @@ void printMenu();
 
 int main() {
     int option;
-    Stack stack;
+    Stack<float> stack;
+
     while( option != 7 ){
         printMenu();
         cin >> option;
+
         switch (option) {
             case PUSH:
-                int value;
+                float value;
                 cout << "Type de value: " << endl;
                 cin.clear();
                 cin >> value;
-                cout << "Value " << value << endl;
+                cout << endl;
                 stack.push(value);
                 cout << "Push: " << stack.top() << endl;
                 break;
@@ -46,11 +48,10 @@ int main() {
                 break;
         }
     }
-    
 }
 
 void printMenu() {
-    cout << "Choose an option:" << endl;
+    cout << endl << "Choose an option:" << endl;
     cout << "0 - PUSH" << endl << "1 - TOP" << endl << "2 - POP"
          << endl << "3 - BEGIN" << endl << "4 - ROLLBACK" << endl
          << "5 - COMMIT" << endl << "6 - PRINT BLOCK" << endl

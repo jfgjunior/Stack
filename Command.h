@@ -1,19 +1,19 @@
 #ifndef COMMAND_H
 #define COMMAND_H
 
-typedef struct Command {
+template <class T>
+struct Command {
     int command;
-    int value;
+    T value;
 
     Command(int cmd) {
         command = cmd;
     }
 
-    Command(int cmd, int val) {
+    Command(int cmd, T val) {
         command = cmd;
         value = val;
     }
-
-} Command;
+};
 
 #endif

@@ -1,15 +1,17 @@
 # Stack
 Simple stack data structure written in C++.
 
-## Operations
-- Top : Get the top elemente
-- Pop : Get the top elemente and remove
-- Push: Put the value in the top of the stack
-- Begin: Start a new block where the user can undo or merge changes
-- Rollback: Undo the last operation
-- Commit: Merge the blocks
-- ToString: Print the current block
+### Operations
+  1. <b>Top</b>:        Get the top element
+  2. <b>Pop</b>:        Get the top element and remove
+  3. <b>Push</b>:       Put the value in the top of the stack
+  4. <b>Begin</b>:      Start a new block which the user can undo or merge changes
+  5. <b>Rollback</b>:   Undo the last operation
+  6. <b>Commit</b>:     Merge the blocks
+  7. <b>ToString</b>:   Print the current block
 
 # Execution
-- clang++ *.cpp -o stack
-- ./stack
+```bash
+clang++ *.cpp -o stack
+./stack
+```
